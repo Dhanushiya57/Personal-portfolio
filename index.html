@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chanthirasegaran Dhanushiya - Full Stack Developer Portfolio">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, Portfolio">
+    <title>Chanthirasegaran Dhanushiya | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Animated Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">Dhanushiya</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title animate-on-load" data-animation="fade-up">
+                        Hi, I'm <span class="highlight gradient-text">Chanthirasegaran Dhanushiya</span>
+                    </h1>
+                    <div class="typing-container">
+                        <h2 class="hero-subtitle typing-text" data-type-speed="100" data-typing-texts='["BIT (Hons) Software Engineering", "Front-End & Web Application Developer", "PHP Backend Developer", "Java Developer"]'></h2>
+                    </div>
+                    <p class="hero-description animate-on-load" data-animation="fade-up" data-delay="300">
+                        Passionate about creating innovative web solutions and turning ideas into reality through code.
+                    </p>
+                    <div class="hero-buttons animate-on-load" data-animation="fade-up" data-delay="500">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/chanthirasegaran-dhanushiya-701537253" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:your.email@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-on-load" data-animation="fade-left" data-delay="200">
+                    <div class="profile-img-wrapper floating">
+                        <div class="profile-glow"></div>
+                        <img src="images/profil.png" alt="Dhanushiya Profile" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title reveal-text" data-scroll-reveal>About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-scroll-reveal data-delay="200">
+                    <p>
+                        I'm a passionate Full Stack Developer specializing in creating dynamic, user-friendly web applications. 
+                        With expertise in both frontend and backend technologies, I transform ideas into functional, 
+                        scalable solutions that deliver exceptional user experiences.
+                    </p>
+                    <p>
+                        My development approach combines clean code practices, modern design principles, and performance 
+                        optimization. I'm proficient in PHP, JavaScript, React.js, Node.js, and database management, 
+                        with a strong focus on creating responsive, accessible, and maintainable applications.
+                    </p>
+                    <p>
+                        I'm constantly learning new technologies and best practices to stay current in the ever-evolving 
+                        world of web development. My goal is to build applications that not only meet technical requirements 
+                        but also provide meaningful value to users and businesses.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span><strong>Name:</strong> Chanthirasegaran Dhanushiya</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span><strong>Location:</strong> Sri Lanka</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span><strong>Experience:</strong> Web Design & Development Intern</span>
+                        </div>
+                    </div>
+                    <a href="Chanthirasegaran Dhanushiya's cv.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title reveal-text" data-scroll-reveal>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category card-3d" data-scroll-reveal data-delay="100">
+                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Web Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI Design Principles</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Basic UI/UX Implementation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category card-3d" data-scroll-reveal data-delay="200">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Database Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Server-side Logic (Beginner)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category card-3d" data-scroll-reveal data-delay="300">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Figma (UI/UX Design)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Canva</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Visual Studio Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web Development Tools & Debugging</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title reveal-text" data-scroll-reveal>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Web Design & Development Intern</h3>
+                        <span class="timeline-date">
+                            <i class="fas fa-calendar"></i> 2025 April - 2025 May
+                        </span>
+                        <p>
+                            Worked as a Web Design & Development Intern, gaining hands-on experience in front-end and web development. Designed and developed responsive web pages using HTML, CSS, and JavaScript, ensuring user-friendly interfaces and cross-browser compatibility. Collaborated with mentors to implement design requirements, improve UI layouts, and enhance website functionality. Gained practical exposure to real-world web development workflows, debugging, 
+                            and performance optimization while strengthening problem-solving and teamwork skills.
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Building responsive web applications</li>
+                            <li>Responsive Web Design</li>
+                            <li>UI Improvement & Debugging</li>
+                            <li>Code review and mentoring</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Add more experience items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <h2 class="section-title reveal-text" data-scroll-reveal>Education</h2>
+            <div class="education-grid">
+                <div class="education-card card-3d" data-scroll-reveal data-delay="100">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Bachelor of Information Technology (BIT Hons Degree - 4 Year)</h3>
+                    <p class="education-institution">ESOFT UNI</p>
+                    <p class="education-date">2022 - 2026</p>
+                    <p class="education-description">
+                        I am pursuing a Bachelor of Information Technology (Honours), a comprehensive four-year degree that combines theoretical knowledge with strong practical experience in modern computing technologies. The program focuses on software development, web technologies, database systems, and IT project management, preparing graduates to design, develop, and manage reliable information systems.
+
+Throughout the degree, I have gained hands-on experience in full-stack web development, system analysis, and user-centered design. I have successfully completed multiple academic projects involving HTML, CSS, JavaScript, PHP, and MySQL, following industry-standard development practices and the Software Development Life Cycle (SDLC). The program has strengthened my problem-solving ability, logical thinking, teamwork, and communication skills, making me well-prepared for real-world IT environments.
+                    </p>
+                </div>
+                
+                <!-- Add more education cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title reveal-text" data-scroll-reveal>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card card-3d magnetic" data-scroll-reveal data-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Web Application</h3>
+                        <p>A full-stack e-commerce platform with user authentication, product catalog, shopping cart, payment gateway integration, and admin dashboard for inventory management.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d magnetic" data-scroll-reveal data-delay="300">
+                    <div class="project-image">
+                        <img src="images/portfolio.png" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website showcasing projects, skills, and experience with smooth animations, particle effects, and interactive UI elements.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card card-3d magnetic" data-scroll-reveal data-delay="400">
+                    <div class="project-image">
+                        <img src="images/SL.png" alt="SL Learn - School Student Learning Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SL Learn – School Student Learning Platform</h3>
+                        <p>A comprehensive Sri Lankan school student learning platform supporting students, educators, and administrators with dashboards, multi-language content, career guidance, and basic analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d magnetic" data-scroll-reveal data-delay="500">
+                    <div class="project-image">
+                        <img src="images/game.png" alt="Java Number Guessing Game">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Java Number Guessing Game</h3>
+                        <p>A simple interactive game where users guess a randomly generated number. Demonstrates use of random numbers, loops, conditionals, and user input handling.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d magnetic" data-scroll-reveal data-delay="600">
+                    <div class="project-image">
+                        <img src="images/Edu.png" alt="Educator Dashboard - SL Learn">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Educator Dashboard – SL Learn (Frontend)</h3>
+                        <p>A front-end focused dashboard for teachers to manage courses, upload resources, create quizzes, and track student progress with multi-language support.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card card-3d magnetic" data-scroll-reveal data-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Web Application">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dynamic Web Application</h3>
+                        <p>A responsive web application with database integration, RESTful API, CRUD operations, and modern UI/UX design principles.</p>
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title reveal-text" data-scroll-reveal>Get In Touch</h2>
+            <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello!</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>dhanushiyachanthirasegaran@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+94 756705859</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Sri Lanka</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/chanthirasegaran-dhanushiya-701537253" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:your.email@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Chanthirasegaran Dhanushiya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
